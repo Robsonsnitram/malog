@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{ height: 100%;}
+
+/*Classes auxiliares*/
+
+section.Principal{
+
+    position: relative;
+    background-image: url('../IMG/ComunicacaoNew.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 15px 0;
+    min-height: 60%;
+    background-attachment: fixed;
+
+}
+
+.Centro{
+
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 2%;
+
+}
+
+.Clear{
+    clear: both;
+}
+.Transparencia{
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+section.Principal header{
+
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffff;
+    z-index: 2;
+}
+
+.Icones-sociais{
+    float: right;
+}
+
+.Icones-sociais a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+}
+.Icones-sociais a:hover{
+    color: grey;
+}
+
+.Logo{
+    
+    margin-top: 40px;
+    float: left;
+    color: orange;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Navbar*/
+nav.Desktop{
+
+    margin-top: 20px;
+    float: right;
+
+}
+
+nav.Desktop ul{
+    list-style-type: none;
+}
+
+nav.Desktop li{
+
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 19px;
+}
+
+nav.Desktop a{
+
+    color: #fff;
+    text-decoration: none;
+    background: orange;
+    border-radius: 8px;
+    padding: 5px 15px;
+
+}
+
+nav.Desktop a:hover{
+
+    color: black;
+ 
+}
+
+nav.Mobile{
+    display: none;
+    float: right;
+}
+
+nav.Mobile i{
+
+    position: relative;
+    top: 50px;
+    font-size: 25px;
+    color: #FFF;
+    cursor: pointer;
+    float: right;
+}
+
+nav.Mobile ul{
+
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 94px;
+    background: #fff;
+    list-style-type: none;
+
+}
+
+nav.Mobile li{
+    
+    font-weight: lighter;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    padding: 8px 0;
+
+}
+
+nav.Mobile a{
+
+    display: none;
+    display: block;
+    text-decoration: none;
+    color:gray;
+    text-transform: uppercase;
+}
+/*fechando navbar*/
+
+.Conteudo-cabecalho{
+
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 110px 0;
+}
+.Conteudo-cabecalho h2{
+
+    color: white;
+    font-weight: normal;
+    font-size: 40px;
+    margin: 0 20px;
+}
+.Conteudo-cabecalho p{
+
+    color: white;
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+.Conteudo-cabecalho p > span{
+    color: orange;
+}
+
+/*fechando cabecalho*/
+
+/*Depoimentos*/
+
+.Chamada-depoimento{
+
+    width: 100%;
+    text-align: center;
+    padding: 18px 2%;
+    background: orange;
+}
+
+.Chamada-depoimento h2{
+
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.Chamada-depoimento h2:hover{
+    color: black;
+    transition: 2.7s;
+}
+
+.Box-depoimento{
+
+    padding: 40px 0;
+}
+
+.Box-depoimento > .Centro-depoimento{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 2%;
+
+}
+
+.Centro-depoimento p{
+
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Comentarios-conteudo{
+    background: grey;
+    border-radius: 20px;
+    padding: 20px 60px;
+    
+}
+.Comentarios-conteudo:hover{
+    box-shadow: 8px 5px;
+    transition: 1.2s;
+}
+
+.Comentarios h1{
+    font-size: 32px;
+    margin: 0 0 40px 0;
+    border-bottom: 1px solid orange;
+    max-width: 55%;
+    
+}
+.Comentarios-conteudo{
+    margin-top: 30px;
+}
+
+.Comentarios-conteudo h2{
+    font-size: 25px;
+    color: orange;
+}
+
+.Comentarios-conteudo p{
+    margin: 40px 0;
+}
+.Comentarios-conteudo p > span{
+    color: #c4c4c4;
+    font-style: italic;
+}
+.Comentarios a{
+    
+    width: 180px;
+    height: 45px;
+    background: gray;
+    color: white; 
+    text-decoration: none;
+    margin-top: 19px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    display: block;
+    line-height: 45px;
+}
+
+.Comentarios a:hover{
+
+    color: black;
+    border: 2px solid orange;
+    background: white;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.6s;
+}
+
+.Depoimento-cadastro form{
+    margin: 15px 5% 0 0;
+}
+
+.Depoimento-cadastro input[type="text"]{
+    width: 50%;
+}
+
+.Depoimento-cadastro input[type="text"]:hover{
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+.Depoimento-cadastro input:not([type="submit"]){
+
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    display: block;
+    padding-left: 8px;
+    margin-top: 10px;
+    border:1px solid orange;
+    
+}
+.Depoimento-cadastro textarea{
+
+    font-size: 15px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid orange;
+    padding: 8px;
+    margin: 10px 0;
+    resize: none;
+    overflow: auto;
+}
+
+.Depoimento-cadastro textarea:hover{
+
+    border:2px solid orange;
+    border-radius: 5px;
+}
+
+.Depoimento-cadastro input[type=submit]{
+
+    font-size: 15px;
+    cursor: pointer;
+    background: orange;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border-radius: 30px;
+    border: 0;
+}
+
+.Depoimento-cadastro input[type=submit]:hover{
+    background: gray;
+    color: black;
+}
+
+.Cadastro h2{
+    border-bottom: 2px solid orange;
+    width: 50%;
+}
+
+.Linha{
+
+    background: orange;
+    height: 2px;
+    width: 80%;
+    margin: 0 0 20px 0
+    
+    
+}
+
+.Avisos-conteudo{
+
+    width: 100%;
+    text-align: justify;
+    padding: 27px 2%;
+    background: gray;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
+.Avisos-conteudo p{
+    font-size: 16px;
+    font-weight: bold;
+}
+.Avisos-conteudo p > span{
+
+    color: firebrick;
+}
+
+/* Fechando depoimentos*/
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    padding: 10px 2%;
+    color: white;
+    background: orange;
+    text-align: center;
+    border: 4px solid black;
+    
+}
+
+.Footer-opcoes{
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.Footer-opcoes li{
+    display: block;
+    margin: 20px 100px;
+    
+}
+
+.Footer-opcoes a{
+    color: white;
+    text-decoration: none;
+    vertical-align: middle
+}
+.Footer-opcoes a:hover{
+
+    color: gray;
+    border-bottom: 1px solid black;
+    transition: 1.7s;
+}
+
+/*Fechando Footer*/
+
+/*Iniciando responsividade*/
+
+@media screen and (max-width:768px) {
+
+    nav.Mobile {display: block ;}
+    .Mobile i {
+        margin: 0 15px 0 15px;
+    }
+
+    nav.Desktop {display: none;}
+
+
+    
+}
